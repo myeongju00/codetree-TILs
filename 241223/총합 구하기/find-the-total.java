@@ -14,7 +14,7 @@ public class Main {
         int sum = 0;
         
         if(a % 6 != 0) {
-            a += (a % 6);
+            a += (6 - a % 6);
         }
 
         for(int i = a; i <= b; i += 6) {
