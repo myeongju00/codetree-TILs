@@ -9,27 +9,16 @@ public class Main {
 
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < n; i++) {
-            sb.append("* ");
-        }
-        sb.append("\n");
-
-        for (int i = 1; i < n; i++) {
-            for (int j = 0; j < i; j++) {
-                sb.append("* ");
+        for(int i = 0; i < 2 * n; i++) {
+            if(i % 2 == 1) {
+                for(int k = 0; k < 1 + i / 2; k++)
+                    sb.append("* ");
+            }
+            else {
+                for(int k = 0; k < n - i / 2; k++)
+                    sb.append("* ");
             }
             sb.append("\n");
-        }
-
-        for (int i = n - 1; i >= 1; i--) {
-            for (int j = 0; j < i; j++) {
-                sb.append("* ");
-            }
-            sb.append("\n");
-        }
-
-        for (int i = 0; i < n; i++) {
-            sb.append("* ");
         }
 
         System.out.println(sb);
