@@ -19,8 +19,8 @@ public class Main {
                list.add(a);
             }
         }
-        for(int i = list.size(); i > 0; i--) {
-            sb.append(list.get(i - 1)).append(" ");
+        for(int i = list.size() - 1; i >= 0; i--) {
+            sb.append(list.get(i)).append(" ");
         }
         System.out.println(sb);
     }
