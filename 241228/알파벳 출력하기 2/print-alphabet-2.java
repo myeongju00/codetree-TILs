@@ -18,6 +18,9 @@ public class Main {
             for(int j = 0; j < i; j++) {
                 sb.append(ch).append(" ");
                 ch++;
+                if(ch > 'Z') {
+                    ch = 'A';
+                }
             }
             
             sb.append("\n");
