@@ -8,11 +8,11 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         
-        StringTokenizer st;
+        StringTokenizer st = new StringTokenizer(br.readLine());
         StringBuilder sb = new StringBuilder();
         ArrayList<Integer> list = new ArrayList<>();
         for(int i = 0; i < n; i++) {
-            st = new StringTokenizer(br.readLine());
+            
             int a = Integer.parseInt(st.nextToken());
         
             if(a % 2 == 0) {
